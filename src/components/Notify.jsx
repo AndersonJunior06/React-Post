@@ -20,7 +20,7 @@ const Notify = ({ message, type = 'success', onClose, duration = 3000 }) => {
       className={`fixed top-4 right-4 ${bgColor} text-white px-4 py-3 rounded shadow-lg`}
     >
       {message}
-      <button className="ml-4 font-bold" onClick={onClose}>
+      <button className='ml-4 font-bold' onClick={onClose}>
         ×
       </button>
     </div>

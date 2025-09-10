@@ -19,18 +19,18 @@ const PostDetail = () => {
     fetchPost()
   }, [id])
 
-  if (!post) return <p className="text-gray-400 text-center mt-20">Carregando...</p>
+  if (!post) return <p className='text-gray-400 text-center mt-20'>Carregando...</p>
 
   return (
-    <div className="flex justify-center mt-12 px-4">
-      <div className="w-full max-w-5xl bg-gray-800 rounded-lg shadow-lg p-12 text-white">
-        <h1 className="text-3xl md:text-4xl font-bold mb-6 text-center">{post.title}</h1>
-        <p className="text-gray-300 mb-8 text-lg md:text-xl">{post.body}</p>
+    <div className='flex justify-center mt-12 px-4'>
+      <div className='w-full max-w-5xl bg-gray-800 rounded-lg shadow-lg p-12 text-white'>
+        <h1 className='text-3xl md:text-4xl font-bold mb-6 text-center'>{post.title}</h1>
+        <p className='text-gray-300 mb-8 text-lg md:text-xl'>{post.body}</p>
 
-        <div className="text-center">
+        <div className='text-center'>
           <button
             onClick={() => navigate(-1)}
-            className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-semibold transition-colors duration-300"
+            className='px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-semibold transition-colors duration-300'
           >
             Voltar
           </button>
