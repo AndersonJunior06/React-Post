@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SiteFetch from '../axios/config'
 import { useNavigate } from 'react-router-dom'
-import Notify from '../components/notify'
+import Notify from '../components/Notify'
 
 const NewPost = () => {
   const navigate = useNavigate()
