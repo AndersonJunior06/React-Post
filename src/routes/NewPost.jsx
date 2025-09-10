@@ -17,7 +17,6 @@ const NewPost = () => {
     try {
       const resposta = await SiteFetch.post('/posts', post)
       setNotify({ message: 'Post criado com sucesso!', type: 'success' })
-
       console.log('Post criado:', resposta.data)
       setTimeout(() => {
         navigate('/')
@@ -38,6 +37,7 @@ const NewPost = () => {
             Título
           </label>
           <input
+            id='title'
             type='text'
             name='title'
             placeholder='Digite o título'
@@ -53,6 +53,7 @@ const NewPost = () => {
             Conteúdo
           </label>
           <textarea
+            id='body'
             name='body'
             placeholder='Digite o conteúdo'
             rows={6}
